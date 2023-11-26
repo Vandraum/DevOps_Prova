@@ -4,17 +4,20 @@ import os
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
+def Home_Page():
     current_directory = os.path.dirname(os.path.abspath(__file__))
- 
     index_path = os.path.join(current_directory, 'index.html')
-    
+
     if os.path.exists(index_path):
         with open(index_path, 'r') as file:
             content = file.read()
+        css_content = '<link rel="stylesheet" type="text/css" href="style.css">'
+        
+        content = css_content + content
         return content
     else:
         return "Erro: arquivo 'index.html' não encontrado."
 
 if __name__ == '__main__':
     app.run()
+
