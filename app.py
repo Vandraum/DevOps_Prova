@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 import os
 
 app = Flask(__name__)
@@ -17,6 +17,11 @@ def Home_Page():
         return content
     else:
         return "Erro: arquivo 'index.html' não encontrado."
+
+@app.route('/<path:filename>')
+def serve_file(filename):
+    return send_from_directory(current_directory, filename)
+
 
 if __name__ == '__main__':
     app.run()
