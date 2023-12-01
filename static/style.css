@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.fundo{
+    background: url(img/preto.jpg) no-repeat;
+    background-size: 100% 100%;	
+    background-position: center;
+    height: 100vh;
+	
+}
+.fundo-sobre{
+    background: url(img/BG2.jpg) no-repeat;
+    background-size:cover;	
+    background-position: center;
+	height: 100vh;
+}
+.fundo-sobre::before {
+	content: "";
+	background-color: rgba(13, 2, 2, 0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.fundo-ingressar{
+    background: url(img/bg3.jpg) no-repeat;
+    background-size: 100% 100%;	
+    background-position: center;
+	height: 100vh;
+}
+.fundo-ingressar::before {
+	content: "";
+	background-color: rgba(13, 2, 2, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.fundo-matematica{
+    background: url(img/bg5.jpg) no-repeat;
+    background-size: 100% 100%;	
+    background-position: center;
+	height: 100vh;
+}
+.fundo-matematica::before {
+	content: "";
+	background-color: rgba(13, 2, 2, 0.8); 
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.fundo-desafios{
+    background: url(img/bg4.png) no-repeat;
+    background-size: 100% 100%;	
+    background-position: center;
+	height: 100vh;
+}
+.fundo-desafios::before {
+	content: "";
+	background-color: rgba(13, 2, 2, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.fundo-contato{
+    background: url(img/banner.jpg) no-repeat;
+    background-size: 100% 100%;	
+    background-position: center;
+	height: 100vh;
+}
+.fundo-contato::before {
+	content: "";
+	background-color: rgba(13, 2, 2, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+
+
+
+.barranave{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+	left: 0;
+    background:  rgba(0,0,0,0.4);
+}
+.barranave ul{
+    float: right;
+    margin-right: 20px;
+}
+.barranave ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+ul li a{
+	font-size: 20px;
+	font-family: 'Arial', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+.barranave ul li a.active,
+.barranave ul li a:hover{
+	background: red;
+	border-radius: 2px;
+}
+.barranave .logo{
+    width: 80px;
+    height: auto;
+    padding: 20px 100px;
+}
+
+
+/* INDEX */
+
+.fundo .CentroTexto{
+	position: fixed;
+	left: 5%;
+	top: 25%;
+	font-family: sans-serif;
+	user-select: none;
+
+}
+
+.CentroTexto h1{
+	color: white;
+	font-size: 40px;
+	width: 100px;
+	font-weight: bold;
+	text-align: left;
+}
+.CentroTexto h2{
+	color: rgb(255, 255, 255);
+	font-size: 50px;
+	font-weight: bold;
+	margin-top: 10px;
+	width: 885px;
+	text-align: left;    
+}
+
+.fundo .resumo{
+	position: fixed;
+	left:10%;
+	top: 25%;
+	font-family: sans-serif;
+	user-select: none;
+}
+.resumo h1{
+	color: white;
+	font-size: 60px;
+	width: 600px;
+	font-weight: normal;
+	text-align: left;
+	
+}
+.resumo h2{
+	color: white;
+	font-size: 20px;
+	width: 600px;
+	font-weight: normal;
+	text-align: left;
+}
+.resumo h3{
+	color: white;
+	font-size: 20px;
+	width: 600px;
+	font-weight: normal;
+	text-align: left;
+}
+
+/* SOBRE */
+
+.fundo-sobre .sobre-Texto{
+	position: fixed;
+	left: 5%;
+	top: 15%;
+	font-family: sans-serif;
+	user-select: none;
+
+}
+.sobre-Texto h1{
+	color: white;
+	font-size: 50px;
+	width: 900px;
+	font-weight: bold;
+	text-align: left;
+
+}
+.fundo-sobre .resumo-historia{
+	position: fixed;
+	color: aliceblue;
+	left: 5%;
+	top: 30%;
+	font-family: sans-serif;
+	user-select: none;
+	overflow: auto; 
+    max-height: 69%; 
+	scrollbar-width: none;
+}
+
+
+/* INGRESSAR */
+
+
+.fundo-ingressar .ingressar-Texto{
+	position: fixed;
+	left: 5%;
+	top: 15%;
+	font-family: sans-serif;
+	user-select: none;
+}
+.ingressar-Texto h1{
+	color: white;
+	font-size: 50px;
+	width: 900px;
+	font-weight: bold;
+	text-align: left;
+}
+.fundo-ingressar .resumo-ingressar{
+	position: fixed;
+	color: aliceblue;
+	left: 5%;
+	top: 30%;
+	font-family: sans-serif;
+	user-select: none;
+	overflow: auto; 
+    max-height: 69%; 
+	scrollbar-width: none;
+}
+
+/* DESAFIOS */
+
+
+.fundo-desafios .desafios-Texto{
+	position: fixed;
+	left: 5%;
+	top: 15%;
+	font-family: sans-serif;
+	user-select: none;
+}
+.desafios-Texto h1{
+	color: white;
+	font-size: 50px;
+	width: 900px;
+	font-weight: bold;
+	text-align: left;
+}
+.fundo-desafios .resumo-desafios{
+	position: fixed;
+	color: aliceblue;
+	left: 5%;
+	top: 30%;
+	font-family: sans-serif;
+	user-select: none;
+	overflow: auto; 
+    max-height: 69%; 
+	scrollbar-width: none;
+}
+
+/* MATEMATICA */
+
+
+.fundo-matematica .matematica-Texto{
+	position: fixed;
+	left: 5%;
+	top: 15%;
+	font-family: sans-serif;
+	user-select: none;
+}
+.matematica-Texto h1{
+	color: white;
+	font-size: 50px;
+	width: 1200px;
+	font-weight: bold;
+	text-align: left;
+}
+.fundo-matematica .resumo-matematica{
+	position: fixed;
+	color: aliceblue;
+	left: 5%;
+	top: 30%;
+	font-family: sans-serif;
+	user-select: none;
+	overflow: auto; 
+    max-height: 69%; 
+	scrollbar-width: none;
+}
+
+
+
+/* formulário de contato */
+
+.formulario-contato {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4); 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: fixed; 
+    top: 30%;
+	left: 30%; 
+    
+}
+
+.formulario-contato h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+	color: white;
+}
+
+.formulario-contato label {
+    display: block;
+    margin-bottom: 5px;
+	color: white;
+	font-weight: bold;
+}
+
+.formulario-contato input[type="text"],
+.formulario-contato input[type="email"],
+.formulario-contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario-contato button {
+    background-color: #0074e4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-contato button:hover {
+    background-color: #005ea1;
+}
+
